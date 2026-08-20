@@ -1,0 +1,55 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CONTACT | LUCEN INVEST</title><link rel="stylesheet" href="styles.css"></head><body><header class="nav inner-nav"><a href="index.html" class="brand"><img src="assets/lucen_logo_v14.png" alt="LUCEN INVEST"></a><nav><a href="about.html">ABOUT</a><a href="business.html">BUSINESS</a><a href="vwheel.html">V-WHEEL</a><a href="portfolio.html">PORTFOLIO</a><a href="leadership.html">TEAM</a><a href="contact.html">CONTACT</a></nav><a class="nav-contact" href="contact.html">CONTACT →</a></header>
+<main class="inner-page"><section class="page-heading"><p class="eyebrow">GET IN TOUCH</p><h1>CONTACT</h1><p>투자, M&A, IPO 및 V-Wheel 관련 문의는 아래 이메일로 연락해주시기 바랍니다.</p></section>
+<section class="contact-intro">
+  <p class="eyebrow">START A CONVERSATION</p>
+  <h2>Investment · M&A · IPO · V-Wheel</h2>
+  <p>기업의 현재 위치와 다음 단계에 맞는 방향을 함께 검토합니다.</p>
+</section>
+<section class="contact-layout"><div class="contact-info">
+<p class="eyebrow">LUCEN INVEST</p>
+<h3>Address</h3>
+<p class="address-ko"><strong>경기도 고양시 덕양구 으뜸로110,<br>힐스테이트에코덕은 102동 1002호</strong></p>
+<p class="address-en">110, Eutteum-ro, Deogyang-gu, Goyang-si,<br>Gyeonggi-do, Republic of Korea</p>
+<div class="contact-lines">
+  <p><span>T.</span> <a href="tel:+82260138692">+82 2-6013-8692</a></p>
+  <p><span>F.</span> +82 50-4293-8692</p>
+  <p><span>E.</span> <a href="mailto:lucen@luceninvest.com">lucen@luceninvest.com</a></p>
+</div>
+<div class="location-simple"><span>LOCATION</span><strong>경기도 고양시 덕양구 으뜸로 110</strong><small>힐스테이트에코덕은 102동 1002호</small></div>
+<a class="map-link" href="https://map.naver.com/p/search/%EC%9C%BC%EB%9C%B8%EB%A1%9C110" target="_blank" rel="noopener">네이버지도에서 보기 →</a>
+</div>
+<form class="contact-form" id="inquiryForm">
+
+<input name="name" placeholder="이름"><input name="company" placeholder="회사명"><input name="email" placeholder="이메일"><input name="phone" placeholder="연락처"><textarea name="message" placeholder="문의 내용"></textarea>
+
+
+
+
+
+<button type="button" id="inquiryButton">문의하기 →</button>
+<div class="inquiry-notice" id="inquiryNotice" aria-live="polite">
+  <strong>온라인 문의 기능을 준비하고 있습니다.</strong>
+  <span>문의는 <a href="mailto:lucen@luceninvest.com">lucen@luceninvest.com</a>으로 부탁드립니다.</span>
+</div>
+</form></section></main><footer class="site-footer"><div class="footer-brand"><img src="assets/lucen_logo_v14.png" alt="LUCEN INVEST"></div><div class="footer-contact">
+<strong>LUCEN INVEST CO., LTD.</strong>
+<span>경기도 고양시 덕양구 으뜸로110, 힐스테이트에코덕은 102동 1002호</span>
+<span>T. +82 2-6013-8692 &nbsp; F. +82 50-4293-8692 &nbsp; E. lucen@luceninvest.com</span>
+</div><nav><a href="about.html">ABOUT</a><a href="business.html">BUSINESS</a><a href="vwheel.html">V-WHEEL</a><a href="portfolio.html">PORTFOLIO</a><a href="leadership.html">TEAM</a><a href="contact.html">CONTACT</a></nav><div class="copyright">© 2026 LUCEN INVEST. ALL RIGHTS RESERVED.</div></footer>
+<script>
+(function(){
+  const btn = document.getElementById('inquiryButton');
+  const notice = document.getElementById('inquiryNotice');
+  if(btn && notice){
+    btn.addEventListener('click', function(){
+      notice.classList.add('show');
+      btn.textContent = '온라인 문의 준비중';
+      notice.scrollIntoView({behavior:'smooth', block:'nearest'});
+    });
+  }
+})();
+</script>
+
+
+
+</body></html>

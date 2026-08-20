@@ -1,0 +1,516 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+:root{--navy:#06182f;--navy2:#0a2340;--gold:#d8a33d;--blue:#2d6bff;--white:#f7f8fa;--muted:#b8c3ce;--line:#334b63}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--white);font-family:Arial,"Malgun Gothic",sans-serif}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.13em;font-weight:700}.nav{height:70px;display:flex;align-items:center;padding:0 3vw;gap:28px;position:absolute;z-index:20;width:100%;border-bottom:1px solid rgba(255,255,255,.12);background:rgba(2,14,29,.65);backdrop-filter:blur(8px)}.inner-nav{position:relative;background:#06182f}.brand{width:210px;height:48px;display:flex;align-items:center}.brand img{width:100%;height:100%;object-fit:contain;object-position:left center}.nav nav{margin-left:auto;display:flex;gap:30px}.nav nav a,.site-footer nav a{color:#fff;text-decoration:none;font-size:10px}.nav-contact{border:1px solid var(--gold);padding:9px 15px;color:#fff;text-decoration:none;font-size:10px}.hero{height:720px;position:relative;overflow:hidden}.hero-bg{position:absolute;inset:0;background:url("assets/hero_corporate_city.jpg") center/cover;filter:saturate(.8) brightness(.78)}.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,15,30,.96),rgba(2,15,30,.45) 60%,rgba(2,15,30,.2)),linear-gradient(0deg,rgba(2,15,30,.75),transparent 50%)}.hero-copy{position:absolute;z-index:2;left:4.7vw;top:125px}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(72px,7vw,112px);line-height:.92;font-weight:400;margin:15px 0 26px}.hero h1 span{color:var(--gold)}.ko{font-size:20px;line-height:1.55}.hero-en{font-size:13px;color:#d1d8df;line-height:1.6}.gold-btn,.outline-gold{display:inline-block;margin-top:22px;padding:13px 22px;border:1px solid var(--gold);background:var(--gold);color:#06182f;text-decoration:none;font-size:11px;font-weight:700}.outline-gold{background:transparent;color:#f0c66e}.home-what{padding:65px 3vw;background:#06182f}.section-title{display:flex;align-items:center;gap:25px;justify-content:center;margin-bottom:28px}.section-title span{width:140px;height:1px;background:var(--gold)}.section-title p{color:var(--gold);letter-spacing:.15em}.what-grid{display:grid;grid-template-columns:repeat(3,1fr);max-width:1200px;margin:auto}.what-grid article{text-align:center;padding:20px 35px;border-right:1px solid var(--line)}.what-grid article:last-child{border-right:0}.what-grid h2{font-family:Georgia,serif;font-size:28px;margin:15px 0 8px}.what-grid h4{color:var(--gold);font-size:13px;margin:0}.what-grid p{color:#d0d7dd;line-height:1.65}.what-icon{font-size:50px;color:var(--gold);height:65px}.what-vw-logo{width:100px;height:65px;object-fit:contain}.trust-grid{max-width:1200px;margin:35px auto 0;border:1px solid #6f5934;display:grid;grid-template-columns:repeat(4,1fr)}.trust-grid div{padding:23px;text-align:center;border-right:1px solid #6f5934}.trust-grid div:last-child{border-right:0}.trust-grid strong{display:block;font-size:26px}.trust-grid span{font-size:11px;color:#c9d0d6}.home-vwheel{display:grid;grid-template-columns:.75fr 1.1fr 1.25fr;gap:40px;align-items:center;padding:60px 4vw;border-top:1px solid #6f5934;border-bottom:1px solid #6f5934;background:#071b33}.vw-home-logo img{width:100%;max-width:230px}.vw-home-copy h2{font-family:Georgia,serif;font-size:38px;margin:0}.vw-tag{color:var(--gold)}.vw-home-copy p{line-height:1.7;color:#d0d7dd}.vw-home-screen img{width:100%;border:1px solid #34506b;box-shadow:0 18px 45px rgba(0,0,0,.35)}.site-footer{display:grid;grid-template-columns:220px 1fr auto;gap:25px;align-items:center;padding:26px 3vw;background:#03101f;border-top:1px solid #283e55}.footer-brand img{width:180px}.site-footer div:nth-child(2){display:flex;gap:20px;align-items:center}.site-footer div:nth-child(2) span{font-size:11px;color:#aeb8c1}.site-footer nav{display:flex;gap:22px}.copyright{grid-column:1/-1;text-align:right;color:#647586;font-size:9px}
+.page-heading{padding:65px 5vw 35px;border-bottom:1px solid var(--line)}.page-heading h1,.inner-hero h1{font-family:Georgia,serif;font-size:52px;margin:10px 0}.page-heading>p:last-child{color:#c8d0d7}.inner-hero{min-height:360px;padding:70px 5vw;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(3,16,31,.9),rgba(3,16,31,.35)),url("assets/hero_corporate_city.jpg") center/cover}.inner-hero>div{max-width:700px}.inner-hero p:last-child{color:#d0d7dd;line-height:1.8}.process-wrap,.history-wrap{padding:55px 5vw}.process-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:center;gap:15px}.process-grid div{border:1px solid #6f5934;padding:28px;text-align:center}.process-grid i{color:var(--gold);font-style:normal;font-size:11px}.process-grid b{display:block;font-size:18px;margin:14px 0}.process-grid span{font-size:12px;color:#c7d0d7;line-height:1.6}.process-grid em{color:var(--gold);font-style:normal;font-size:20px}.history-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #6f5934}.history-grid div{padding:22px 18px;border-right:1px solid #354b60}.history-grid b{display:block;color:#fff}.history-grid span{font-size:11px;color:#aeb8c1;display:block;margin-top:8px}.biz-list{padding:20px 5vw 70px}.biz-list article{display:grid;grid-template-columns:1.05fr 1fr;border:1px solid #354b60;margin:18px 0}.biz-list img{width:100%;height:270px;object-fit:cover}.biz-list article>div{padding:30px}.biz-list h2{font-family:Georgia,serif;font-size:30px}.biz-list p{color:#c4ccd3;line-height:1.8}.biz-list a{color:#efc56e;text-decoration:none;font-size:11px}.vw-page-hero{padding:60px 5vw 35px;display:grid;grid-template-columns:250px 1fr;gap:45px;align-items:center}.vw-page-hero img{width:100%;max-height:160px;object-fit:contain}.vw-page-hero h1{font-family:Georgia,serif;font-size:54px;margin:0}.vw-page-hero>div>p:last-child{color:#c4ccd3;max-width:700px;line-height:1.8}.vw-features{display:grid;grid-template-columns:repeat(4,1fr);padding:25px 5vw;border-top:1px solid #6f5934;border-bottom:1px solid #6f5934}.vw-features div{text-align:center;padding:22px;border-right:1px solid #354b60}.vw-features div:last-child{border-right:0}.vw-features b{display:block;color:var(--gold);margin-bottom:8px}.vw-features span{font-size:12px;color:#c5cdd4}.vw-showcase{padding:35px 5vw 10px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.vw-showcase figure{margin:0;border:1px solid #354b60;background:#071b33}.vw-showcase img{width:100%;height:220px;object-fit:cover;object-position:top}.vw-showcase figcaption{padding:10px;text-align:center;font-size:10px;color:#c7d0d7}.center-cta{text-align:center;padding:20px 0 60px}.leaders-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:25px 5vw 70px}.leaders-4 article{border:1px solid #354b60;background:#071b33}.leader-thumb{height:170px;background-size:cover;background-position:center}.t1{background-image:url("assets/hero_corporate_city.jpg")}.t2{background-image:url("assets/leadership_space.jpg")}.t3{background-image:url("assets/advisory.jpg")}.t4{background-image:url("assets/platform.jpg")}.leaders-4 h2,.leaders-4 h4,.leaders-4 ul{margin-left:18px;margin-right:18px}.leaders-4 h2{font-size:20px}.leaders-4 h4{color:#d6dee4;font-size:12px}.leaders-4 ul{padding-left:16px;color:#b8c2cb;font-size:11px;line-height:1.8;margin-bottom:22px}.contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;padding:35px 5vw 80px}.contact-info{border:1px solid #354b60;padding:30px}.contact-info h3{color:var(--gold);margin-bottom:8px}.contact-info a{color:#fff;text-decoration:none}.contact-info p{color:#c4ccd3}.contact-form{display:grid;gap:12px}.contact-form input,.contact-form textarea{background:#071b33;border:1px solid #354b60;color:#fff;padding:13px}.contact-form textarea{min-height:160px}.contact-form button{background:var(--gold);border:0;padding:14px;font-weight:700}
+@media(max-width:900px){.nav nav,.nav-contact{display:none}.brand{width:180px}.hero{height:650px}.hero-copy{top:120px}.what-grid,.trust-grid,.home-vwheel,.process-grid,.history-grid,.vw-features,.vw-showcase,.leaders-4,.contact-layout,.biz-list article,.vw-page-hero{grid-template-columns:1fr}.what-grid article{border-right:0;border-bottom:1px solid var(--line)}.trust-grid div{border-right:0;border-bottom:1px solid #6f5934}.home-vwheel{text-align:left}.process-grid em{transform:rotate(90deg);text-align:center}.site-footer{grid-template-columns:1fr}.site-footer nav{flex-wrap:wrap}.copyright{text-align:left}}
+
+/* ===========================
+   V15 ENHANCED VISUAL DENSITY
+   =========================== */
+.hero-proof{display:flex;gap:26px;margin-top:30px;border-top:1px solid rgba(216,163,61,.4);padding-top:18px}
+.hero-proof div{display:flex;flex-direction:column;min-width:130px}
+.hero-proof strong{font-size:19px;color:#fff}.hero-proof span{font-size:9px;color:#aeb9c4;margin-top:4px}
+
+.home-section-head{text-align:center;font-family:Georgia,serif;font-size:42px;line-height:1.18;font-weight:400;margin:5px 0 38px}
+.what-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1300px;margin:auto}
+.what-card{border:1px solid #354b60;background:#071b33;overflow:hidden;transition:.25s transform,.25s border-color}
+.what-card:hover{transform:translateY(-3px);border-color:#8a6734}
+.what-photo{height:180px;background-size:cover;background-position:center;filter:saturate(.82)}
+.investment-photo{background-image:linear-gradient(rgba(5,18,35,.08),rgba(5,18,35,.28)),url("assets/investment.jpg")}
+.advisory-photo{background-image:linear-gradient(rgba(5,18,35,.08),rgba(5,18,35,.28)),url("assets/advisory.jpg")}
+.platform-photo{background-image:linear-gradient(rgba(5,18,35,.08),rgba(5,18,35,.28)),url("assets/platform.jpg")}
+.what-body{padding:25px}.what-body h3{font-family:Georgia,serif;font-size:27px;margin:10px 0 5px}.what-body h4{color:#d8a33d;margin:0;font-size:12px}.what-body>p:not(.eyebrow){color:#c4ccd3;line-height:1.75;font-size:13px;min-height:68px}.what-body a{color:#efc56e;text-decoration:none;font-size:10px;letter-spacing:.08em}
+.trust-panel{max-width:1300px;margin:28px auto 0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #6f5934;background:#05152a}
+.trust-panel div{padding:20px 24px;border-right:1px solid #354b60}.trust-panel div:last-child{border-right:0}.trust-panel b{font-size:9px;color:#d8a33d;display:block}.trust-panel strong{font-size:21px;display:block;margin:7px 0 3px}.trust-panel span{font-size:10px;color:#aeb8c1}
+
+.home-vwheel{grid-template-columns:.9fr 1.8fr;gap:42px;padding:70px 4.5vw}
+.vw-intro img{width:240px;max-height:120px;object-fit:contain;object-position:left center}.vw-intro h2{font-family:Georgia,serif;font-size:50px;margin:14px 0}.vw-intro>p:not(.eyebrow){color:#c6ced5;line-height:1.8}
+.vw-preview-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.vw-preview-grid figure{margin:0;border:1px solid #34506b;background:#06182f}.vw-preview-grid img{width:100%;height:190px;object-fit:cover;object-position:top;display:block}.vw-preview-grid figcaption{padding:10px 12px;display:flex;justify-content:space-between;gap:12px}.vw-preview-grid b{font-size:12px}.vw-preview-grid span{font-size:9px;color:#9eabb6}
+
+.home-leadership-teaser{display:grid;grid-template-columns:1.1fr .9fr;min-height:410px;border-bottom:1px solid #6f5934}.leadership-image{background:linear-gradient(90deg,rgba(4,16,31,.15),rgba(4,16,31,.05)),url("assets/leadership_space.jpg") center/cover}.leadership-teaser-copy{padding:62px 6vw 55px 5vw;background:#06182f}.leadership-teaser-copy h2{font-family:Georgia,serif;font-size:42px;line-height:1.18;font-weight:400}.leadership-teaser-copy>p:not(.eyebrow){color:#c6ced5;line-height:1.8}.leadership-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:25px 0}.leadership-stats span{border-top:1px solid #6f5934;padding-top:12px;font-size:9px;color:#aeb8c1}.leadership-stats strong{display:block;color:#fff;font-size:23px;margin-bottom:5px}
+
+.about-belief,.vw-product-story,.leadership-overview{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;padding:70px 5vw;background:#071b33;border-top:1px solid #354b60}.about-belief h2,.vw-product-story h2,.leadership-overview h2{font-family:Georgia,serif;font-size:40px;line-height:1.2;font-weight:400}.belief-copy p,.vw-product-story>p,.leadership-overview>p{color:#c3ccd4;line-height:1.9}.belief-copy b{color:#fff}
+.business-capability{display:grid;grid-template-columns:repeat(3,1fr);padding:35px 5vw;background:#071b33;border-top:1px solid #6f5934;border-bottom:1px solid #6f5934}.business-capability div{padding:18px 25px;border-right:1px solid #354b60}.business-capability div:last-child{border-right:0}.business-capability span{display:block;color:#d8a33d;font-size:10px;margin-bottom:8px}.business-capability b{font-size:13px}
+.business-cta{padding:70px 5vw;text-align:center;background:linear-gradient(90deg,rgba(4,16,31,.96),rgba(4,16,31,.72)),url("assets/hero_corporate_city.jpg") center/cover}.business-cta h2{font-family:Georgia,serif;font-size:44px;line-height:1.2;font-weight:400}
+.vw-lifecycle{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1fr;align-items:center;gap:10px;padding:42px 5vw;background:#071b33;border-top:1px solid #6f5934;border-bottom:1px solid #6f5934}.vw-lifecycle div{text-align:center;padding:15px}.vw-lifecycle i{display:block;color:#d8a33d;font-size:9px;font-style:normal}.vw-lifecycle b{display:block;margin:8px 0}.vw-lifecycle span{font-size:10px;color:#aeb8c1}.vw-lifecycle em{color:#d8a33d;font-style:normal}
+.leadership-cred{display:grid;grid-template-columns:repeat(4,1fr);padding:30px 5vw;background:#071b33;border-top:1px solid #6f5934}.leadership-cred div{padding:15px 22px;border-right:1px solid #354b60}.leadership-cred div:last-child{border-right:0}.leadership-cred strong{display:block;font-size:28px;color:#fff}.leadership-cred span{font-size:10px;color:#aeb8c1}
+.contact-intro{padding:38px 5vw 0}.contact-intro h2{font-family:Georgia,serif;font-size:34px;margin:8px 0}.contact-intro>p:last-child{color:#b9c3cc}
+
+@media(max-width:900px){
+.hero-proof{gap:12px;flex-wrap:wrap}.home-section-head{font-size:32px}.what-card-grid,.trust-panel,.vw-preview-grid,.home-leadership-teaser,.about-belief,.vw-product-story,.leadership-overview,.business-capability,.leadership-cred{grid-template-columns:1fr}.what-card-grid{gap:12px}.trust-panel div,.business-capability div,.leadership-cred div{border-right:0;border-bottom:1px solid #354b60}.home-vwheel{grid-template-columns:1fr}.home-leadership-teaser{min-height:auto}.leadership-image{min-height:280px}.leadership-stats{grid-template-columns:1fr}.vw-lifecycle{grid-template-columns:1fr}.vw-lifecycle em{transform:rotate(90deg);text-align:center}
+}
+
+/* ===========================
+   V16 CONTACT + COMING SOON
+   =========================== */
+.coming-page{min-height:620px;display:flex;align-items:center;justify-content:center;padding:70px 5vw;background:
+radial-gradient(circle at 70% 30%,rgba(45,107,255,.13),transparent 35%),
+linear-gradient(135deg,#06182f,#03101f)}
+.coming-card{width:min(850px,100%);padding:70px 60px;border:1px solid #40566c;background:rgba(7,27,51,.76);text-align:center;box-shadow:0 28px 70px rgba(0,0,0,.25)}
+.coming-line{width:52px;height:2px;background:#d8a33d;margin:20px auto 30px}
+.coming-card h1{font-family:Georgia,serif;font-weight:400;font-size:64px;letter-spacing:.04em;margin:0 0 15px}
+.coming-card h2{font-size:19px;margin:0 0 12px}.coming-card>p:last-of-type{color:#aeb8c1}
+.coming-actions{display:flex;justify-content:center;gap:12px;margin-top:25px}.coming-actions .gold-btn,.coming-actions .outline-gold{margin-top:0}
+
+.contact-info{padding:32px}
+.contact-info h3{margin-top:20px}
+.address-ko{line-height:1.65;margin:8px 0 7px}.address-ko strong{font-size:14px}
+.address-en{font-size:11px;line-height:1.65;color:#9fabb6!important;margin-top:0}
+.contact-lines{margin:22px 0;border-top:1px solid #354b60;border-bottom:1px solid #354b60;padding:12px 0}
+.contact-lines p{margin:7px 0!important;font-size:12px}.contact-lines span{display:inline-block;width:24px;color:#d8a33d;font-weight:700}
+.contact-lines a{color:#e9edf0}
+.mini-map{height:190px;border:1px solid #455c71;margin-top:18px;overflow:hidden;background:#0a2340}
+.mini-map iframe{width:100%;height:100%;border:0;filter:saturate(.65) contrast(.95)}
+.map-link{display:inline-block;margin-top:10px;color:#efc56e!important;font-size:10px!important;letter-spacing:.06em}
+.footer-contact{display:flex!important;flex-direction:column;align-items:flex-start!important;gap:4px!important}
+.footer-contact strong{font-size:11px}.footer-contact span{font-size:9px!important;color:#8997a4!important;line-height:1.5}
+@media(max-width:900px){
+.coming-card{padding:48px 24px}.coming-card h1{font-size:44px}.coming-actions{flex-direction:column}
+.mini-map{height:220px}
+}
+
+.cta-note{margin:12px 0 0;color:#8f9daa;font-size:10px;letter-spacing:.02em}
+
+/* V18 inquiry pending state */
+.inquiry-notice{display:none;margin-top:4px;padding:18px 20px;border:1px solid #6f5934;background:rgba(216,163,61,.06);line-height:1.65}
+.inquiry-notice.show{display:block}
+.inquiry-notice strong{display:block;color:#efc56e;font-size:13px;margin-bottom:4px}
+.inquiry-notice span{font-size:11px;color:#b9c3cc}
+.inquiry-notice a{color:#fff;text-decoration:none;border-bottom:1px solid #6f5934}
+#inquiryButton{cursor:pointer}
+
+/* V19 — V-Wheel logo should blend seamlessly into navy background */
+.vw-intro img,
+.vw-page-hero img,
+.what-vw-logo,
+.vw-home-logo img,
+img[alt="V-Wheel"]{
+    border:none !important;
+    outline:none !important;
+    box-shadow:none !important;
+    background:transparent !important;
+}
+.vw-intro,
+.vw-page-hero{
+    border-image:none !important;
+}
+
+/* V20 — Contact map correction */
+.lucen-map{position:relative;background:#e8edf0;overflow:hidden;filter:none!important}
+.lucen-map .map-grid{position:absolute;inset:0;background:
+linear-gradient(90deg,transparent 49.5%,rgba(158,172,182,.28) 50%,transparent 50.5%),
+linear-gradient(0deg,transparent 49.5%,rgba(158,172,182,.22) 50%,transparent 50.5%);
+background-size:72px 52px}
+.road{position:absolute;background:#fff;border:1px solid #cfd8de;box-shadow:0 0 0 5px rgba(255,255,255,.55)}
+.road-a{height:18px;width:120%;left:-10%;top:56%;transform:rotate(-4deg)}
+.road-b{height:16px;width:75%;left:33%;top:20%;transform:rotate(54deg)}
+.road-c{height:14px;width:70%;left:-8%;top:23%;transform:rotate(18deg)}
+.map-pin{position:absolute;left:49%;top:42%;width:26px;height:26px;background:#d8a33d;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 3px 8px rgba(0,0,0,.22)}
+.map-pin span{position:absolute;width:9px;height:9px;border-radius:50%;background:#06182f;left:8px;top:8px}
+.map-label{position:absolute;left:54%;top:36%;padding:8px 11px;background:#06182f;color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.map-label strong{display:block;font-size:11px;letter-spacing:.05em}.map-label span{display:block;margin-top:3px;font-size:9px;color:#d7dee4;white-space:nowrap}
+
+/* V22 — Portfolio + Fund + Team */
+.home-fund{display:grid;grid-template-columns:1.2fr 1.3fr .65fr;gap:35px;align-items:center;padding:38px 5vw;background:#d8a33d;color:#07182c}
+.home-fund .eyebrow{color:#07182c}.home-fund h2{font-family:Georgia,serif;font-size:29px;line-height:1.15;margin:5px 0}
+.fund-status{border-left:1px solid rgba(7,24,44,.35);padding-left:30px}.fund-status strong{font-size:14px}.fund-status p{font-size:11px;line-height:1.65;margin:7px 0 0;opacity:.8}
+.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#07182c;margin-right:8px}
+.fund-number{text-align:right}.fund-number b{display:block;font-family:Georgia,serif;font-size:40px}.fund-number span{font-size:10px}
+
+.home-portfolio{padding:65px 5vw;background:#06182f;border-bottom:1px solid #6f5934}
+.portfolio-head{display:grid;grid-template-columns:1.1fr 1fr auto;align-items:end;gap:35px;margin-bottom:30px}.portfolio-head h2{font-family:Georgia,serif;font-size:46px;margin:5px 0}.portfolio-head>p{font-size:12px;color:#aeb8c1;line-height:1.7}
+.portfolio-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.portfolio-mini-grid a{position:relative;padding:30px 27px 27px;min-height:130px;border:1px solid #354b60;background:linear-gradient(135deg,#0a2340,#06172c);text-decoration:none;transition:.25s}.portfolio-mini-grid a:hover{border-color:#d8a33d;transform:translateY(-2px)}
+.portfolio-mini-grid span{font-size:9px;color:#d8a33d;letter-spacing:.08em}.portfolio-mini-grid strong{display:block;color:#fff;font-family:Georgia,serif;font-size:26px;margin:13px 0 5px}.portfolio-mini-grid p{color:#8f9daa;font-size:10px;margin:0}
+
+.portfolio-hero{padding:85px 5vw 70px;background:radial-gradient(circle at 78% 35%,rgba(45,107,255,.18),transparent 30%),linear-gradient(120deg,#041326,#08203b);border-bottom:1px solid #6f5934}
+.portfolio-hero h1{font-family:Georgia,serif;font-size:66px;line-height:1.02;font-weight:400;margin:15px 0 22px}.portfolio-hero h1 span{color:#d8a33d}.portfolio-hero>p:last-child{color:#bdc7cf;line-height:1.8}
+.fund-banner{display:flex;justify-content:space-between;align-items:center;padding:30px 5vw;background:#d8a33d;color:#06182f}.fund-banner .eyebrow{color:#06182f}.fund-banner h2{margin:5px 0 0;font-size:21px}.fund-live{display:flex;align-items:center;gap:10px}.fund-live i{width:8px;height:8px;background:#06182f;border-radius:50%}.fund-live b{font-size:13px}.fund-live span{font-size:10px;border-left:1px solid rgba(6,24,47,.35);padding-left:10px}
+.portfolio-list{padding:60px 5vw 75px;background:#06182f}.portfolio-card{display:grid;grid-template-columns:.82fr 1.18fr;min-height:340px;max-width:1250px;margin:0 auto 22px;border:1px solid #354b60;background:#071b33}.portfolio-card.reverse{grid-template-columns:1.18fr .82fr}.portfolio-card.reverse .portfolio-visual{order:2}.portfolio-card.reverse .portfolio-copy{order:1}
+.portfolio-visual{position:relative;padding:32px;display:flex;align-items:flex-end;overflow:hidden}.portfolio-visual:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-55px;top:-40px}.portfolio-visual span{position:absolute;top:25px;left:28px;font-size:11px;color:#d8a33d}.portfolio-visual b{font-family:Georgia,serif;font-size:36px;line-height:1.05;letter-spacing:.03em;z-index:1}
+.industrial-visual{background:linear-gradient(145deg,#102c48,#07182c)}.industrial-visual:before{content:"";position:absolute;left:13%;right:13%;bottom:22%;height:44%;border:1px solid rgba(216,163,61,.45);background:repeating-linear-gradient(90deg,transparent 0 32px,rgba(216,163,61,.08) 33px 34px)}
+.medtech-visual{background:radial-gradient(circle at 72% 30%,rgba(255,255,255,.15),transparent 20%),linear-gradient(145deg,#13334e,#07182c)}.medtech-visual:before{content:"+";position:absolute;right:18%;top:20%;font-size:130px;font-weight:200;color:rgba(216,163,61,.18)}
+.ai-visual{background:radial-gradient(circle at 70% 45%,rgba(45,107,255,.32),transparent 28%),linear-gradient(145deg,#0b2545,#06172c)}.ai-visual:before{content:"";position:absolute;width:150px;height:150px;border:1px solid rgba(216,163,61,.45);transform:rotate(45deg);right:15%;top:25%}
+.portfolio-copy{padding:45px 48px;display:flex;flex-direction:column;justify-content:center}.portfolio-copy h2{font-family:Georgia,serif;font-size:38px;margin:7px 0 3px}.portfolio-copy h3{font-size:10px;letter-spacing:.08em;color:#8997a4;margin:0 0 18px}.portfolio-copy>p:not(.eyebrow){color:#c1cbd3;font-size:12px;line-height:1.85;max-width:720px}
+.portfolio-tags{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 22px}.portfolio-tags span{font-size:9px;color:#d8a33d;border:1px solid #5d5139;padding:7px 10px}.portfolio-link{color:#fff;text-decoration:none;font-size:10px;letter-spacing:.08em}.portfolio-link:hover{color:#d8a33d}
+.portfolio-note{text-align:center;padding:22px 5vw;border-top:1px solid #354b60;background:#041326}.portfolio-note p{font-size:9px;color:#748391}
+@media(max-width:900px){.home-fund,.portfolio-head,.portfolio-mini-grid,.portfolio-card,.portfolio-card.reverse{grid-template-columns:1fr}.fund-status{border-left:0;border-top:1px solid rgba(7,24,44,.35);padding:18px 0 0}.fund-number{text-align:left}.portfolio-head{align-items:start}.portfolio-card.reverse .portfolio-visual,.portfolio-card.reverse .portfolio-copy{order:initial}.portfolio-visual{min-height:230px}.portfolio-hero h1{font-size:48px}.fund-banner{align-items:flex-start;gap:15px;flex-direction:column}}
+
+/* V23 — fund amount removed, exact map search retained */
+.home-fund{grid-template-columns:1.05fr 1.4fr}
+.home-fund .fund-status{border-left:1px solid rgba(7,24,44,.35)}
+@media(max-width:900px){
+  .home-fund{grid-template-columns:1fr}
+  .home-fund .fund-status{border-left:0;border-top:1px solid rgba(7,24,44,.35)}
+}
+
+/* V26 — Embedded NAVER Map */
+.naver-map-wrap{height:220px;border:1px solid #455c71;margin-top:18px;overflow:hidden;background:#e9eef2}
+.naver-map-canvas{width:100%;height:100%;position:relative}
+.map-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:
+linear-gradient(135deg,#eaf0f3,#dce6eb);color:#06182f;padding:25px}
+.map-fallback strong{font-size:13px;letter-spacing:.08em}
+.map-fallback span{margin-top:8px;font-size:10px;color:#61707d;line-height:1.55}
+
+/* V27 — simple location, no embedded map/API */
+.naver-map-wrap,.naver-map-canvas,.map-fallback{display:none!important}
+.location-simple{margin-top:18px;padding:18px 20px;border:1px solid #354b60;background:#071b33}
+.location-simple span{display:block;color:#d8a33d;font-size:9px;letter-spacing:.1em;margin-bottom:7px}
+.location-simple strong{display:block;color:#fff;font-size:12px;line-height:1.55}
+.location-simple small{display:block;color:#8997a4;font-size:10px;margin-top:4px}
+
+/* V28 — exact newly supplied V-Wheel logo asset */
+img[src$="vwheel_logo_v28.png"]{
+  background:transparent!important;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+}
+.vw-intro img,.vw-page-hero img,.what-vw-logo,.vw-home-logo img{
+  background:transparent!important;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  object-fit:contain;
+}
+
+/* =========================================================
+   V29 GOLD TONE EDITION — visual comparison against V28
+   Structure/content unchanged; color atmosphere only.
+   ========================================================= */
+:root{
+  --gold-soft:#c99a46;
+  --gold-light:#e5c277;
+  --bronze-deep:#241b16;
+  --navy-warm:#08192c;
+}
+
+/* Overall background: still navy, with subtle warm-gold light */
+body{
+  background:
+    radial-gradient(circle at 82% 9%, rgba(201,154,70,.10), transparent 27%),
+    radial-gradient(circle at 12% 38%, rgba(181,132,55,.055), transparent 25%),
+    linear-gradient(135deg,#041326 0%,#08192c 48%,#0c1927 72%,#07182c 100%) !important;
+}
+
+/* Header/footer remain authoritative navy, with a warmer separator */
+.nav,.inner-nav{
+  background:linear-gradient(90deg,rgba(3,16,31,.98),rgba(8,24,42,.98),rgba(20,22,28,.98)) !important;
+  border-bottom-color:rgba(201,154,70,.48) !important;
+}
+.site-footer{
+  background:linear-gradient(100deg,#03101f,#08182a 58%,#171711) !important;
+  border-top:1px solid rgba(201,154,70,.42) !important;
+}
+
+/* Main dark sections: navy -> extremely dark bronze -> navy */
+.home-portfolio,.portfolio-list,.coming-page{
+  background:
+    radial-gradient(circle at 80% 30%,rgba(201,154,70,.07),transparent 28%),
+    linear-gradient(120deg,#05172b 0%,#0b1c2d 58%,#191813 100%) !important;
+}
+
+/* V-Wheel sections gain a faint champagne glow without changing the logo */
+.vw-intro,.vw-page-hero{
+  background:
+    radial-gradient(circle at 75% 45%,rgba(212,172,86,.09),transparent 30%),
+    linear-gradient(125deg,#06182f,#0a1d31 62%,#191914) !important;
+}
+
+/* Cards: less flat, subtly metallic */
+.portfolio-mini-grid a,
+.portfolio-card,
+.contact-info,
+.contact-form,
+.location-simple,
+.coming-card{
+  background:
+    linear-gradient(135deg,rgba(8,28,50,.97),rgba(22,24,25,.97)) !important;
+  border-color:rgba(178,145,87,.38) !important;
+}
+.portfolio-mini-grid a:hover,
+.portfolio-card:hover{
+  border-color:rgba(229,194,119,.78) !important;
+}
+
+/* Portfolio hero */
+.portfolio-hero{
+  background:
+    radial-gradient(circle at 77% 30%,rgba(216,163,61,.15),transparent 28%),
+    radial-gradient(circle at 35% 110%,rgba(45,107,255,.11),transparent 32%),
+    linear-gradient(120deg,#041326,#0b1d2f 63%,#211b12) !important;
+}
+
+/* Warm accent treatment */
+.eyebrow,
+.portfolio-mini-grid span,
+.portfolio-tags span,
+.contact-lines span,
+.location-simple span,
+.map-link,
+.portfolio-link:hover,
+.cta-note{
+  color:var(--gold-light) !important;
+}
+.gold-btn,
+.contact-form button,
+.nav-contact{
+  background:linear-gradient(110deg,#bd8730,#e0ad4c,#c18b34) !important;
+}
+.outline-gold{
+  border-color:rgba(229,194,119,.72) !important;
+  color:#efcf8c !important;
+}
+
+/* Fund strip: champagne gold instead of saturated yellow-gold */
+.home-fund,.fund-banner{
+  background:linear-gradient(100deg,#b98431,#d7a94f 48%,#e0bc70 100%) !important;
+}
+
+/* Bright content areas: soft ivory/champagne rather than stark white */
+.home-portfolio + section:not(.home-leadership-teaser),
+.portfolio-note{
+  border-color:rgba(201,154,70,.30) !important;
+}
+
+/* Decorative section separators */
+section{
+  border-bottom-color:rgba(181,144,78,.24);
+}
+
+/* Team/home leadership dark areas receive subtle warm vignette */
+.home-leadership-teaser{
+  background:
+    radial-gradient(circle at 15% 50%,rgba(201,154,70,.08),transparent 30%),
+    linear-gradient(115deg,#06182f,#0b1b2c 70%,#181712) !important;
+}
+
+/* V30 — portfolio company links */
+.company-link{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  pointer-events:auto!important;
+  cursor:pointer!important;
+  position:relative;
+  z-index:5;
+}
+.company-link:hover{
+  text-decoration:underline;
+}
+
+/* =========================================================
+   V32 — Unified Typography
+   Pretendard (SIL Open Font License) + system fallbacks
+   ========================================================= */
+html,body,
+button,input,textarea,select,
+.nav,.site-footer,
+h1,h2,h3,h4,h5,h6,
+p,span,a,strong,b,small,label,
+.eyebrow,
+.home-section-head,
+.vw-intro h2,
+.leadership-teaser-copy h2,
+.about-belief h2,
+.vw-product-story h2,
+.leadership-overview h2,
+.business-cta h2,
+.contact-intro h2,
+.coming-card h1,
+.portfolio-head h2,
+.portfolio-hero h1,
+.portfolio-visual b,
+.portfolio-copy h2,
+.home-fund h2,
+.fund-number b,
+.portfolio-mini-grid strong{
+  font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",Arial,sans-serif !important;
+}
+
+/* Preserve hierarchy through weight/spacing rather than mixed typefaces */
+h1,.portfolio-hero h1,.coming-card h1{font-weight:700!important;letter-spacing:-.035em}
+h2,.home-section-head,.vw-intro h2,.portfolio-head h2,
+.leadership-teaser-copy h2,.portfolio-copy h2{font-weight:650!important;letter-spacing:-.025em}
+h3,h4,strong,b{font-weight:600}
+body,p{font-weight:400;letter-spacing:-.01em}
+.eyebrow,.nav a,.portfolio-link,.map-link{
+  font-weight:600!important;
+  letter-spacing:.08em!important;
+}
+.gold-btn,.outline-gold,.nav-contact,.contact-form button{
+  font-weight:600!important;
+  letter-spacing:.025em;
+}
+
+/* =========================================================
+   V33 — MOBILE RESPONSIVE OPTIMIZATION
+   Desktop V32 design/content preserved.
+   ========================================================= */
+@media (max-width: 768px){
+
+  html,body{overflow-x:hidden}
+  body{font-size:14px}
+
+  /* Header: compact, horizontally scrollable menu rather than broken wrap */
+  .nav,.inner-nav{
+    min-height:64px!important;
+    height:auto!important;
+    padding:10px 16px!important;
+    display:grid!important;
+    grid-template-columns:auto 1fr!important;
+    gap:10px!important;
+    align-items:center!important;
+  }
+  .brand img{width:142px!important;max-height:43px!important;object-fit:contain!important}
+  .nav nav,.inner-nav nav{
+    grid-column:1 / -1;
+    order:3;
+    display:flex!important;
+    overflow-x:auto!important;
+    white-space:nowrap!important;
+    gap:21px!important;
+    padding:10px 1px 4px!important;
+    scrollbar-width:none;
+    border-top:1px solid rgba(201,154,70,.20);
+  }
+  .nav nav::-webkit-scrollbar,.inner-nav nav::-webkit-scrollbar{display:none}
+  .nav nav a,.inner-nav nav a{font-size:10px!important;flex:0 0 auto}
+  .nav-contact{justify-self:end!important;font-size:9px!important;padding:9px 12px!important}
+
+  /* Hero */
+  .hero{min-height:auto!important;padding:70px 20px 58px!important;background-position:center!important}
+  .hero-content{max-width:100%!important}
+  .hero h1{font-size:43px!important;line-height:1.05!important;letter-spacing:-.045em!important}
+  .hero h2{font-size:17px!important;line-height:1.45!important}
+  .hero p{font-size:12px!important;line-height:1.75!important}
+  .hero-proof{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:8px!important;margin-top:26px!important}
+  .hero-proof div{min-width:0!important;padding-right:4px}
+  .hero-proof strong{font-size:16px!important}.hero-proof span{font-size:8px!important;line-height:1.35}
+
+  /* Section typography and spacing */
+  .home-what,.home-vwheel,.home-portfolio,.portfolio-list{padding-left:18px!important;padding-right:18px!important}
+  .home-section-head{font-size:29px!important;line-height:1.25!important;margin-bottom:27px!important}
+  .section-title{margin-top:4px!important}
+  .eyebrow{font-size:9px!important}
+
+  /* What we do */
+  .what-card-grid{grid-template-columns:1fr!important;gap:14px!important}
+  .what-card{display:grid!important;grid-template-columns:38% 62%!important;min-height:185px}
+  .what-photo{height:100%!important;min-height:185px!important}
+  .what-body{padding:20px 17px!important}
+  .what-body h3{font-size:22px!important}.what-body h4{font-size:10px!important}
+  .what-body>p:not(.eyebrow){font-size:10px!important;min-height:0!important;line-height:1.65!important}
+  .trust-panel{grid-template-columns:repeat(2,1fr)!important}
+  .trust-panel div{padding:15px!important;border-right:0!important;border-bottom:1px solid #354b60!important}
+  .trust-panel strong{font-size:18px!important}
+
+  /* V-Wheel */
+  .home-vwheel{padding-top:48px!important;padding-bottom:48px!important;grid-template-columns:1fr!important}
+  .vw-intro img{width:210px!important}
+  .vw-intro h2{font-size:37px!important}
+  .vw-preview-grid{grid-template-columns:1fr 1fr!important;gap:8px!important}
+  .vw-preview-grid img{height:125px!important}
+  .vw-preview-grid figcaption{display:block!important;padding:9px!important}
+  .vw-preview-grid span{display:block;margin-top:3px}
+
+  /* Fund */
+  .home-fund{padding:26px 18px!important;gap:16px!important}
+  .home-fund h2{font-size:24px!important}
+  .fund-status{padding-top:15px!important}
+  .fund-status p{font-size:10px!important}
+
+  /* Portfolio teaser */
+  .home-portfolio{padding-top:48px!important;padding-bottom:48px!important}
+  .portfolio-head{grid-template-columns:1fr!important;gap:12px!important;align-items:start!important}
+  .portfolio-head h2{font-size:36px!important}
+  .portfolio-head .outline-gold{width:max-content}
+  .portfolio-mini-grid{grid-template-columns:1fr!important}
+  .portfolio-mini-grid a{min-height:auto!important;padding:22px!important}
+
+  /* Team teaser */
+  .home-leadership-teaser{grid-template-columns:1fr!important}
+  .leadership-image{min-height:240px!important}
+  .leadership-teaser-copy{padding:42px 20px!important}
+  .leadership-teaser-copy h2{font-size:31px!important}
+  .leadership-stats{grid-template-columns:repeat(3,1fr)!important;gap:8px!important}
+  .leadership-stats strong{font-size:19px!important}
+
+  /* Inner page hero/general */
+  .inner-page section{scroll-margin-top:120px}
+  .portfolio-hero{padding:58px 20px 48px!important}
+  .portfolio-hero h1{font-size:43px!important}
+  .portfolio-hero>p:last-child{font-size:11px!important}
+  .fund-banner{padding:23px 20px!important}
+  .fund-banner h2{font-size:17px!important}
+
+  /* Portfolio details */
+  .portfolio-list{padding-top:35px!important;padding-bottom:48px!important}
+  .portfolio-card,.portfolio-card.reverse{grid-template-columns:1fr!important;min-height:0!important}
+  .portfolio-card.reverse .portfolio-visual,.portfolio-card.reverse .portfolio-copy{order:initial!important}
+  .portfolio-visual{min-height:190px!important;padding:24px!important}
+  .portfolio-visual b{font-size:29px!important}
+  .portfolio-copy{padding:28px 24px!important}
+  .portfolio-copy h2{font-size:31px!important}
+  .portfolio-copy>p:not(.eyebrow){font-size:11px!important}
+
+  /* About / Business / Team text blocks */
+  .about-belief,.vw-product-story,.leadership-overview{
+    grid-template-columns:1fr!important;gap:14px!important;padding:45px 20px!important
+  }
+  .about-belief h2,.vw-product-story h2,.leadership-overview h2{font-size:29px!important}
+  .belief-copy p,.vw-product-story>p,.leadership-overview>p{font-size:11px!important}
+  .business-capability,.leadership-cred{grid-template-columns:1fr 1fr!important;padding:24px 18px!important}
+  .business-cta{padding:55px 20px!important}
+  .business-cta h2{font-size:31px!important}
+  .vw-lifecycle{padding:30px 20px!important}
+
+  /* Contact */
+  .contact-intro{padding:32px 20px 0!important}
+  .contact-intro h2{font-size:27px!important}
+  .contact-layout{display:grid!important;grid-template-columns:1fr!important;gap:16px!important;padding-left:18px!important;padding-right:18px!important}
+  .contact-info,.contact-form{padding:24px!important}
+  .address-ko strong{font-size:13px!important}
+  .address-en{font-size:10px!important}
+  .contact-form input,.contact-form textarea{font-size:16px!important} /* prevent iOS auto zoom */
+  .contact-form button{width:100%!important}
+  .location-simple{padding:16px!important}
+
+  /* Coming soon */
+  .coming-page{min-height:560px!important;padding:35px 18px!important}
+  .coming-card{padding:45px 22px!important}
+  .coming-card h1{font-size:39px!important}
+  .coming-actions{flex-direction:column!important}
+  .coming-actions a{width:100%;box-sizing:border-box;text-align:center}
+
+  /* Footer */
+  .site-footer{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+    padding:32px 18px!important;
+  }
+  .footer-brand img{width:150px!important}
+  .footer-contact span{font-size:8.5px!important}
+  .site-footer nav{display:flex!important;gap:13px!important;flex-wrap:wrap!important}
+  .site-footer nav a{font-size:9px!important}
+  .copyright{font-size:8px!important}
+
+  /* Touch targets */
+  .gold-btn,.outline-gold,.portfolio-link,.map-link,.nav-contact{
+    min-height:40px;
+    display:inline-flex;
+    align-items:center;
+  }
+}
+
+@media (max-width: 420px){
+  .hero h1{font-size:38px!important}
+  .hero-proof{grid-template-columns:1fr 1fr 1fr!important}
+  .what-card{grid-template-columns:1fr!important}
+  .what-photo{height:155px!important;min-height:155px!important}
+  .vw-preview-grid{grid-template-columns:1fr!important}
+  .vw-preview-grid img{height:175px!important}
+  .leadership-stats{grid-template-columns:1fr!important}
+  .business-capability,.leadership-cred{grid-template-columns:1fr!important}
+}
