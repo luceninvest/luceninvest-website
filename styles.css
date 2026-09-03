@@ -547,7 +547,7 @@ body,p{font-weight:400;letter-spacing:-.01em}
 }
 
 .advisory-panel{
-  border:1px solid #d8a33d;
+  border:1px solid rgba(216,163,61,.45);
   background:#071b33;
   display:flex;
   flex-direction:column;
@@ -561,7 +561,7 @@ body,p{font-weight:400;letter-spacing:-.01em}
   letter-spacing:.06em;
   text-align:center;
   padding:18px 12px;
-  border-bottom:1px solid rgba(216,163,61,.55);
+  border-bottom:1px solid rgba(216,163,61,.35);
 }
 
 .advisory-visual{
@@ -569,7 +569,7 @@ body,p{font-weight:400;letter-spacing:-.01em}
   background:
     linear-gradient(rgba(7,27,51,.12),rgba(7,27,51,.20)),
     url("assets/advisory.jpg") center/cover;
-  border-bottom:1px solid rgba(216,163,61,.55);
+  border-bottom:1px solid rgba(216,163,61,.35);
 }
 
 .advisory-copy{
