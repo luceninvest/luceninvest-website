@@ -514,3 +514,12 @@ body,p{font-weight:400;letter-spacing:-.01em}
   .leadership-stats{grid-template-columns:1fr!important}
   .business-capability,.leadership-cred{grid-template-columns:1fr!important}
 }
+/* TEAM metrics align with team cards */
+.leadership-cred{
+  gap:12px;
+}
+
+.leadership-cred > div{
+  padding-left:18px;
+  padding-right:18px;
+}
