@@ -523,3 +523,84 @@ body,p{font-weight:400;letter-spacing:-.01em}
   padding-left:18px;
   padding-right:18px;
 }
+/* TEAM + ADVISORY layout */
+.team-layout{
+  display:grid;
+  grid-template-columns:minmax(0,4fr) minmax(220px,1fr);
+  gap:16px;
+  padding:25px 5vw 70px;
+  align-items:stretch;
+}
+
+.team-main{
+  min-width:0;
+}
+
+.team-main .leaders-4{
+  padding:0 0 12px !important;
+}
+
+.team-main .leadership-cred{
+  padding:0 !important;
+  margin:0;
+  gap:12px;
+}
+
+.advisory-panel{
+  border:1px solid #d8a33d;
+  background:#071b33;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+
+.advisory-title{
+  color:#d8a33d;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-align:center;
+  padding:18px 12px;
+  border-bottom:1px solid rgba(216,163,61,.55);
+}
+
+.advisory-visual{
+  height:170px;
+  background:
+    linear-gradient(rgba(7,27,51,.12),rgba(7,27,51,.20)),
+    url("assets/advisory.jpg") center/cover;
+  border-bottom:1px solid rgba(216,163,61,.55);
+}
+
+.advisory-copy{
+  padding:0 18px 18px;
+}
+
+.advisory-copy h2{
+  font-size:20px;
+  margin:16px 0 8px;
+}
+
+.advisory-copy h4{
+  color:#d8a33d;
+  font-size:12px;
+  margin:0 0 12px;
+}
+
+.advisory-copy ul{
+  padding-left:16px;
+  margin:0;
+  color:#b8c2cb;
+  font-size:11px;
+  line-height:1.8;
+}
+
+@media(max-width:900px){
+  .team-layout{
+    grid-template-columns:1fr;
+  }
+
+  .advisory-panel{
+    margin-top:12px;
+  }
+}
