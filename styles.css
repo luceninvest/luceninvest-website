@@ -514,25 +514,3 @@ body,p{font-weight:400;letter-spacing:-.01em}
   .leadership-stats{grid-template-columns:1fr!important}
   .business-capability,.leadership-cred{grid-template-columns:1fr!important}
 }
-/* TEAM bottom metrics alignment */
-.leadership-cred{
-  width:90%;
-  max-width:1300px;
-  margin:0 auto;
-  padding:0 !important;
-  display:grid !important;
-  grid-template-columns:repeat(4,1fr) !important;
-  gap:16px !important;
-  background:#071b33;
-  border-top:1px solid #6f5934;
-}
-
-.leadership-cred > div{
-  padding:22px 20px !important;
-  border-right:1px solid #354b60;
-  box-sizing:border-box;
-}
-
-.leadership-cred > div:last-child{
-  border-right:none;
-}
