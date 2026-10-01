@@ -604,8 +604,3 @@ body,p{font-weight:400;letter-spacing:-.01em}
     margin-top:12px;
   }
 }
-/* TEAM card image height */
-.leaders-4 .leader-thumb{
-  height:170px !important;
-  min-height:170px !important;
-}
